@@ -5,36 +5,7 @@ function runExperiment(sampleSize) {
 
   for (let index = 0; index < sampleSize; index++) {
     let rndInt = Math.floor(Math.random() * 6) + 1;
-
-    switch (rndInt) {
-      case 1:
-        valueCounts[0] = valueCounts[0] + 1;
-
-        break;
-      case 2:
-        valueCounts[1] = valueCounts[1] + 1;
-
-        break;
-
-      case 3:
-        valueCounts[2] = valueCounts[2] + 1;
-
-        break;
-      case 4:
-        valueCounts[3] = valueCounts[3] + 1;
-
-        break;
-      case 5:
-        valueCounts[4] = valueCounts[4] + 1;
-
-        break;
-      case 6:
-        valueCounts[5] = valueCounts[5] + 1;
-
-        break;
-      default:
-        break;
-    }
+    valueCounts[rndInt-1]++;
   }
 
 
